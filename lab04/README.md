@@ -5,7 +5,10 @@ Core Data Relationships and Fetching<br/>
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+<mark>
 Sample tìm kiếm theo tên, lowercase, tồn tại chuỗi tìm kiếm<br/>
+Khi đi vào thực tế tuỳ vào bài toán thiết kế cơ sở dữ liệu và nghiệp vụ ta sẽ có cấu hình predicate khác nhau<br/>
+</mark>
 <br>
 ```swift
 // Tạo Author
