@@ -19,29 +19,17 @@ class CustomDrawingView: UIView {
         self.drawWidth = drawWidth
         self.drawHeight = drawHeight
         self.drawColor = drawColor
-        self.drawCustomViewIfNeed()
+        self.setNeedsDisplay()
     }
     
     override func draw(_ rect: CGRect) {
-        self.drawCustomViewIfNeed()
-    }
-    
-    private func drawCustomViewIfNeed() {
-        layer.sublayers?.forEach({ l in
-            l.removeFromSuperlayer()
-        })
-        var path: UIBezierPath?
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        context.setFillColor(self.drawColor.cgColor)
         let size: CGRect = .init(x: 100, y: 100, width: self.drawWidth, height: self.drawHeight)
         if (self.drawType == .circle) {
-            path = UIBezierPath(ovalIn: size)
+            context.fillEllipse(in: size)
         } else {
-            path = UIBezierPath(roundedRect: size, cornerRadius: 0)
-        }
-        if let path = path {
-            let shapeLayer = CAShapeLayer()
-            shapeLayer.path = path.cgPath
-            shapeLayer.fillColor = drawColor.cgColor
-            layer.addSublayer(shapeLayer)
+            context.fill(size)
         }
     }
 }
