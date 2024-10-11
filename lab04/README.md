@@ -5,6 +5,7 @@ Core Data Relationships and Fetching<br/>
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+Sample tìm kiếm theo tên, lowercase, tồn tại chuỗi tìm kiếm<br/>
 <br>
 ```swift
 // Tạo Author
