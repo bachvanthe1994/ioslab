@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  lab5
+//  lab05
 //
 //  Created by thebv on 11/10/2024.
 //
