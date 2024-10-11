@@ -5,7 +5,9 @@
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+<mark>
 Sample cho phép kéo min max tự do, không giới hạn trái phải, làm tròn theo int, min: 0, max: 100<br/>
+</mark>
 <br>
 1 vài ảnh của dự án<br>
 <br>
