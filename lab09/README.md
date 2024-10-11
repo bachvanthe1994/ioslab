@@ -5,8 +5,10 @@
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+<mark>
 Lưu trữ keychain, mã hoá aes key/value, access: kSecAttrAccessibleWhenUnlockedThisDeviceOnly<br/>
-Gỡ app cài lại vẫn hiển thị thông tin dữ liệu username/password cũ
+Gỡ app cài lại vẫn hiển thị thông tin dữ liệu username/password cũ<br>
+</mark>
 <br>
 1 vài ảnh của dự án<br>
 <br>
