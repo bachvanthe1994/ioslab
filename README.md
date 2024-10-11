@@ -1,15 +1,13 @@
 # ioslab
 ioslab
 
-Yêu cầu chi tiết từng bài lab:
-1. Custom Drawing with Core Graphics
-◦ Sử dụng Core Graphics để vẽ hình tròn và hình vuông trên một UIView tùy chỉnh.
-◦ Cho phép người dùng nhập màu sắc và kích thước qua giao diện và cập nhật hình vẽ
-tương ứng.
-2. Advanced Animations with Core Animation
-◦ Thêm một UIImageView vào giao diện.
-◦ Thực hiện các animation đồng thời bao gồm di chuyển (position), xoay (rotation), và thay
-đổi kích thước (scale).
+Yêu cầu chi tiết từng bài lab:<br/>
+1. Custom Drawing with Core Graphics<br/>
+◦ Sử dụng Core Graphics để vẽ hình tròn và hình vuông trên một UIView tùy chỉnh.<br/>
+◦ Cho phép người dùng nhập màu sắc và kích thước qua giao diện và cập nhật hình vẽ tương ứng.<br/>
+2. Advanced Animations with Core Animation<br/>
+◦ Thêm một UIImageView vào giao diện.<br/>
+◦ Thực hiện các animation đồng thời bao gồm di chuyển (position), xoay (rotation), và thay đổi kích thước (scale).<br/>
 3. Custom Collection View Layout
 ◦ Tạo một UICollectionView với layout tùy chỉnh bằng cách kế thừa UICollectionViewLayout.
 ◦ Tạo một layout dạng lưới không đối xứng, ví dụ: các mục có chiều cao khác nhau.
