@@ -5,6 +5,10 @@
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+<mark>
+Hiển thị danh sách ảnh online, độ dài không cố định, tự động fit height cho cell<br>
+Demo chưa làm shimmer loading, nếu đi vào thực tế sẽ cần có shimmer loading để giao diện thân thiện hơn<br>
+</mark>
 <br>
 1 vài ảnh của dự án<br>
 <br>
