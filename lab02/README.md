@@ -4,7 +4,7 @@
 <br>
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
-Có thể chạy trên máy thật để tương tác<br/>
+<mark>Có thể chạy trên máy thật để tương tác</mark><br/>
 <br>
 1 vài ảnh của dự án<br>
 <br>
