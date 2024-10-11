@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3B-2q-SZG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7ov-F9-XV3">
+            <objects>
+                <navigationController id="P3B-2q-SZG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CWt-II-UHo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p8s-ST-GRU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grX-UB-m8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1180" y="-532"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMv-3b-CMC">
+                                <rect key="frame" x="129.66666666666666" y="280.66666666666669" width="133.99999999999997" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DEMO CRASH"/>
+                                <connections>
+                                    <segue destination="T8W-bM-SQZ" kind="show" id="wEE-Oh-sq2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfV-PB-vCF">
+                                <rect key="frame" x="20" y="103" width="353" height="77.666666666666686"/>
+                                <string key="text">10. Advanced Swift Concurrency
+◦ Sử dụng async/await để thực hiện các tác vụ bất đồng bộ như gọi API và xử lý kết quả.
+◦ Sử dụng actors để chia sẻ trạng thái an toàn giữa các tác vụ bất đồng bộ.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p8-b8-EaM">
+                                <rect key="frame" x="106.66666666666669" y="419.66666666666669" width="180" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DEMO WITH ACTOR"/>
+                                <connections>
+                                    <segue destination="h6j-Fg-VnN" kind="show" id="dki-gJ-yPE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IfV-PB-vCF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="34h-Ij-HaI"/>
+                            <constraint firstItem="9p8-b8-EaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axc-Sh-DKG"/>
+                            <constraint firstItem="qMv-3b-CMC" firstAttribute="top" secondItem="IfV-PB-vCF" secondAttribute="bottom" constant="100" id="PFL-g3-7Y1"/>
+                            <constraint firstItem="IfV-PB-vCF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QdJ-Tm-1iT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IfV-PB-vCF" secondAttribute="trailing" constant="20" id="XnS-iA-QSO"/>
+                            <constraint firstItem="9p8-b8-EaM" firstAttribute="top" secondItem="qMv-3b-CMC" secondAttribute="bottom" constant="100" id="lxg-8M-koh"/>
+                            <constraint firstItem="qMv-3b-CMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOB-fI-GmC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fdg-St-ciS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="-532"/>
+        </scene>
+        <!--DEMO CRASH-->
+        <scene sceneID="zNN-e7-aW2">
+            <objects>
+                <viewController id="T8W-bM-SQZ" customClass="ViewControllerCrash" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcS-JB-JRn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MQe-8R-fYR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DEMO CRASH" id="06Z-VU-gV1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mNp-fD-E3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-806"/>
+        </scene>
+        <!--DEMO WITH ACTOR-->
+        <scene sceneID="u3p-03-fXb">
+            <objects>
+                <viewController id="h6j-Fg-VnN" customClass="ViewControllerWithActor" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="heQ-mm-6WQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="19Q-z9-rDC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DEMO WITH ACTOR" id="Edo-bt-lY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzg-f0-TUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

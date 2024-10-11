@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qTD-Dm-itk">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7DQ-zS-Mzh">
+            <objects>
+                <navigationController id="qTD-Dm-itk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kbm-sa-tvp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SDv-G5-flo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXX-W4-EpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1264" y="-80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-I6-KSL">
+                                <rect key="frame" x="20" y="102.99999999999999" width="353" height="139.66666666666663"/>
+                                <mutableString key="text">Lab 2: Advanced Animations with Core Animation
+Mục tiêu: Làm việc với Core Animation để tạo các animation phức tạp.
+• Tạo một ứng dụng với một hình ảnh và thực hiện một loạt các animation phức tạp bao gồm di
+chuyển, xoay, và thay đổi kích thước đồng thời.  Dùng 1 ngón để di chuyển 2 ngón để xoay và zoom-in zoom-out</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VA-1c-Fpw">
+                                <rect key="frame" x="20" y="262.66666666666669" width="353" height="535.33333333333326"/>
+                                <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nhO-I6-KSL" secondAttribute="trailing" constant="20" id="5H1-d1-FtE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5VA-1c-Fpw" secondAttribute="trailing" constant="20" id="7jo-jJ-Lzb"/>
+                            <constraint firstItem="5VA-1c-Fpw" firstAttribute="top" secondItem="nhO-I6-KSL" secondAttribute="bottom" constant="20" id="GeS-Fd-t08"/>
+                            <constraint firstItem="5VA-1c-Fpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gho-kl-i3B"/>
+                            <constraint firstItem="nhO-I6-KSL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZBS-90-ih6"/>
+                            <constraint firstItem="nhO-I6-KSL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="f6p-F5-bg0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5VA-1c-Fpw" secondAttribute="bottom" constant="20" id="mpV-6C-Qix"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kzH-9w-Pk4"/>
+                    <connections>
+                        <outlet property="vContent" destination="5VA-1c-Fpw" id="SyT-Ow-zNJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
