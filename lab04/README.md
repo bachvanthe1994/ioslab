@@ -6,6 +6,7 @@ App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
 <br>
+```swift
 // Tạo Author
 let author1 = Author(context: context)
 author1.name = "Author One"
@@ -26,6 +27,7 @@ book3.addToAuthors([author1])
 
 author1.addToBooks([book1, book2, book3])
 author2.addToBooks([book1, book2])
+```
 <br>
 <br>
 1 vài ảnh của dự án<br>
