@@ -5,7 +5,9 @@
 App iOS, min ios 13<br/>
 Chọn lại Team để run dự án<br/>
 Có thể chạy trên máy ảo iPhone 13 pro<br/>
+<mark>
 Cho phép download khi app chạy dưới nền<br/>
+</mark>
 <br>
 1 vài ảnh của dự án<br>
 <br>
