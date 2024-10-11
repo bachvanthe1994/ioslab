@@ -13,4 +13,4 @@ Demo 2 case, crash và không crash khi sử dụng actor
 <br>
 <img src="https://github.com/user-attachments/assets/4e342d69-e6e0-4d4c-b7c9-150758cd0f36" width="200" />
 <img width="1395" alt="Screenshot 2024-10-12 at 02 40 04" src="https://github.com/user-attachments/assets/293af65e-7caa-4444-82aa-8837348aff09">
-<img width="1147" alt="Screenshot 2024-10-12 at 02 39 39" src="https://github.com/user-attachments/assets/c912c421-590f-452f-8856-50ea0a55bef8">
+<img width="1391" alt="Screenshot 2024-10-12 at 02 42 09" src="https://github.com/user-attachments/assets/0b4f2e72-0cd6-445a-ab15-9f517b13eac4">
