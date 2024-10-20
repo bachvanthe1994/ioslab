@@ -34,9 +34,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMv-3b-CMC">
-                                <rect key="frame" x="129.66666666666666" y="280.66666666666669" width="133.99999999999997" height="39"/>
+                                <rect key="frame" x="137.33333333333334" y="280.66666666666669" width="118.33333333333334" height="39"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DEMO CRASH"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Demo Crash"/>
                                 <connections>
                                     <segue destination="T8W-bM-SQZ" kind="show" id="wEE-Oh-sq2"/>
                                 </connections>
@@ -51,11 +51,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p8-b8-EaM">
-                                <rect key="frame" x="106.66666666666669" y="419.66666666666669" width="180" height="39"/>
+                                <rect key="frame" x="119.33333333333333" y="339.66666666666669" width="154.33333333333337" height="39"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DEMO WITH ACTOR"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Demo With Actor"/>
                                 <connections>
                                     <segue destination="h6j-Fg-VnN" kind="show" id="dki-gJ-yPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBF-Ws-cOx">
+                                <rect key="frame" x="140.66666666666666" y="398.66666666666669" width="112" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AsyncAwait"/>
+                                <connections>
+                                    <segue destination="s15-25-pyE" kind="show" id="BW4-Jc-imF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P7-ri-w31">
+                                <rect key="frame" x="95.666666666666686" y="457.66666666666669" width="202" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Grand Central Dispatch"/>
+                                <connections>
+                                    <segue destination="Vju-E1-Zie" kind="show" id="myp-YW-vTA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJ9-zl-iuO">
+                                <rect key="frame" x="71.666666666666686" y="516.66666666666663" width="250" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Operation &amp; Operation Queue"/>
+                                <connections>
+                                    <segue destination="NJv-dh-X09" kind="show" id="jDJ-6V-bu4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,9 +89,15 @@
                             <constraint firstItem="IfV-PB-vCF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="34h-Ij-HaI"/>
                             <constraint firstItem="9p8-b8-EaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axc-Sh-DKG"/>
                             <constraint firstItem="qMv-3b-CMC" firstAttribute="top" secondItem="IfV-PB-vCF" secondAttribute="bottom" constant="100" id="PFL-g3-7Y1"/>
+                            <constraint firstItem="3P7-ri-w31" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PmH-W0-HdS"/>
                             <constraint firstItem="IfV-PB-vCF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QdJ-Tm-1iT"/>
+                            <constraint firstItem="sJ9-zl-iuO" firstAttribute="top" secondItem="3P7-ri-w31" secondAttribute="bottom" constant="20" id="XUp-b0-9X4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IfV-PB-vCF" secondAttribute="trailing" constant="20" id="XnS-iA-QSO"/>
-                            <constraint firstItem="9p8-b8-EaM" firstAttribute="top" secondItem="qMv-3b-CMC" secondAttribute="bottom" constant="100" id="lxg-8M-koh"/>
+                            <constraint firstItem="3P7-ri-w31" firstAttribute="top" secondItem="YBF-Ws-cOx" secondAttribute="bottom" constant="20" id="ZBF-AG-bEZ"/>
+                            <constraint firstItem="YBF-Ws-cOx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZQo-tV-vRz"/>
+                            <constraint firstItem="YBF-Ws-cOx" firstAttribute="top" secondItem="9p8-b8-EaM" secondAttribute="bottom" constant="20" id="buc-0J-MVN"/>
+                            <constraint firstItem="9p8-b8-EaM" firstAttribute="top" secondItem="qMv-3b-CMC" secondAttribute="bottom" constant="20" id="lxg-8M-koh"/>
+                            <constraint firstItem="sJ9-zl-iuO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uh1-21-xGx"/>
                             <constraint firstItem="qMv-3b-CMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOB-fI-GmC"/>
                         </constraints>
                     </view>
@@ -77,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="-286" y="-532"/>
         </scene>
-        <!--DEMO CRASH-->
+        <!--Demo Crash-->
         <scene sceneID="zNN-e7-aW2">
             <objects>
                 <viewController id="T8W-bM-SQZ" customClass="ViewControllerCrash" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,13 +117,29 @@
                         <viewLayoutGuide key="safeArea" id="MQe-8R-fYR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DEMO CRASH" id="06Z-VU-gV1"/>
+                    <navigationItem key="navigationItem" title="Demo Crash" id="06Z-VU-gV1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNp-fD-E3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="-806"/>
+            <point key="canvasLocation" x="903" y="-532"/>
         </scene>
-        <!--DEMO WITH ACTOR-->
+        <!--AsyncAwait-->
+        <scene sceneID="1Vq-ty-Wg6">
+            <objects>
+                <viewController id="s15-25-pyE" customClass="AsyncAwaitViewController" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kD5-g3-DM6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="434-S4-T9g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AsyncAwait" id="j1F-KE-Y1j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gn-bz-KkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="-532"/>
+        </scene>
+        <!--Demo With Actor-->
         <scene sceneID="u3p-03-fXb">
             <objects>
                 <viewController id="h6j-Fg-VnN" customClass="ViewControllerWithActor" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,11 +149,43 @@
                         <viewLayoutGuide key="safeArea" id="19Q-z9-rDC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DEMO WITH ACTOR" id="Edo-bt-lY4"/>
+                    <navigationItem key="navigationItem" title="Demo With Actor" id="Edo-bt-lY4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzg-f0-TUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="-157"/>
+            <point key="canvasLocation" x="903" y="161"/>
+        </scene>
+        <!--Grand Central Dispatch-->
+        <scene sceneID="VXW-h4-Yq6">
+            <objects>
+                <viewController id="Vju-E1-Zie" customClass="GrandCentralDispatchViewController" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bwi-cT-53x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="glD-FE-s8p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grand Central Dispatch" id="7Wd-kw-p97"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="967-xN-acc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="161"/>
+        </scene>
+        <!--Operation & Operation Queue-->
+        <scene sceneID="LjC-Fg-xZ1">
+            <objects>
+                <viewController id="NJv-dh-X09" customClass="OperationViewController" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ug2-2L-UCH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fqV-Vl-tfa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Operation &amp; Operation Queue" id="vZ4-LU-e1x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxK-nt-1kP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679" y="161"/>
         </scene>
     </scenes>
     <resources>

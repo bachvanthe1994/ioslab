@@ -37,19 +37,27 @@ class ViewControllerCrash: UIViewController {
         func callApiInBackground(reuqestId: String) async throws {
             let url = URL(string: "https://bachvanthe1994.github.io/demo/learning/demovpb/vpbmenu.json")!
             // Gọi API và phân tích cú pháp dữ liệu JSON
-            let (data, _) = try await URLSession.shared.data(from: url)
-            self.dataManager.addUser("\(reuqestId)-\(data)")
+            if #available(iOS 15.0, *) {
+                let (data, _) = try await URLSession.shared.data(from: url)
+                self.dataManager.addUser("\(reuqestId)-\(data)")
+            } else {
+                // Fallback on earlier versions
+            }
         }
         
         //Tạo nhiều request để call API
-        Task {
-            for i in 0..<1000000 {
-                do {
-                    try await callApiInBackground(reuqestId: "requestId[\(i)]")
-                } catch {
-                    print("error: \(error)")
+        if #available(iOS 13.0, *) {
+            Task {
+                for i in 0..<1000000 {
+                    do {
+                        try await callApiInBackground(reuqestId: "requestId[\(i)]")
+                    } catch {
+                        print("error: \(error)")
+                    }
                 }
             }
+        } else {
+            // Fallback on earlier versions
         }
         
         DispatchQueue.global().async {
