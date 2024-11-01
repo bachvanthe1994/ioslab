@@ -11,6 +11,16 @@ import SwiftyJSON
 import Security
 import CommonCrypto
 
+
+// Thêm thông tin xác thực vào header
+//request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+func genBasicAuthorization(username: String, password: String) {
+    let loginString = "\(username):\(password)"
+    guard let loginData = loginString.data(using: .utf8) else { return }
+    let base64LoginString = loginData.base64EncodedString()
+}
+
+
 func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
     if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
         if let serverTrust = challenge.protectionSpace.serverTrust {
