@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		32A0962C2CD4ACBF00E8F98A /* note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32A0962B2CD4ACBF00E8F98A /* note.txt */; };
 		32A0962E2CD4D35D00E8F98A /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0962D2CD4D35D00E8F98A /* Demo.swift */; };
+		32A096312CD5175200E8F98A /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 32A096302CD5175200E8F98A /* AnyCodable */; };
 		32D9DD822CD304FA0041E692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9DD812CD304FA0041E692 /* AppDelegate.swift */; };
 		32D9DD842CD304FA0041E692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9DD832CD304FA0041E692 /* SceneDelegate.swift */; };
 		32D9DD862CD304FA0041E692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9DD852CD304FA0041E692 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A096312CD5175200E8F98A /* AnyCodable in Frameworks */,
 				32D9DD972CD306760041E692 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +109,7 @@
 			name = lab12;
 			packageProductDependencies = (
 				32D9DD962CD306760041E692 /* SwiftyJSON */,
+				32A096302CD5175200E8F98A /* AnyCodable */,
 			);
 			productName = lab12;
 			productReference = 32D9DD7E2CD304FA0041E692 /* lab12.app */;
@@ -138,6 +141,7 @@
 			mainGroup = 32D9DD752CD304FA0041E692;
 			packageReferences = (
 				32D9DD952CD306760041E692 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				32A0962F2CD5175200E8F98A /* XCRemoteSwiftPackageReference "AnyCodable" */,
 			);
 			productRefGroup = 32D9DD7F2CD304FA0041E692 /* Products */;
 			projectDirPath = "";
@@ -397,6 +401,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		32A0962F2CD5175200E8F98A /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flight-School/AnyCodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
 		32D9DD952CD306760041E692 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -408,6 +420,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		32A096302CD5175200E8F98A /* AnyCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32A0962F2CD5175200E8F98A /* XCRemoteSwiftPackageReference "AnyCodable" */;
+			productName = AnyCodable;
+		};
 		32D9DD962CD306760041E692 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 32D9DD952CD306760041E692 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
