@@ -220,6 +220,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+//bảo mật
 extension ViewController: URLSessionTaskDelegate {
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -232,7 +234,9 @@ extension ViewController: URLSessionTaskDelegate {
                 for index in 0..<certificateCount {
                     if let serverCertificate = SecTrustGetCertificateAtIndex(serverTrust, index) {
                         if let pin = getPublicKeyData(from: serverCertificate) {
-                            serverPins.append(pin)
+                            if (isValidDomain(for: serverCertificate, domain: "restful-api.dev")) {
+                                serverPins.append(pin)
+                            }
                         }
                     }
                 }
