@@ -47,7 +47,7 @@ class OperationViewController: UIViewController {
         ob2.addDependency(ob1.unsafelyUnwrapped)
         let queue = OperationQueue()
         print("------ a")
-        queue.addOperations([ob1.unsafelyUnwrapped], waitUntilFinished: false)
+        queue.addOperations([ob1.unsafelyUnwrapped], waitUntilFinished: true)
         print("------ b")
         queue.addOperation(ob2)
         print("------ c")

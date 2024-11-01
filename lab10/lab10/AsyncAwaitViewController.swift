@@ -58,10 +58,10 @@ class AsyncAwaitViewController: UIViewController {
                     let datas = await self.dataManager.getDatas()
                     print("datas: queryId: \(i): \(datas.count)")
                     
-                    let vc = UIViewController()
-                    vc.view.clipsToBounds = true
-                    vc.view.backgroundColor = .red
-                    self.navigationController?.pushViewController(vc, animated: true)
+//                    let vc = UIViewController()
+//                    vc.view.clipsToBounds = true
+//                    vc.view.backgroundColor = .red
+//                    self.navigationController?.pushViewController(vc, animated: true)
 
                 }
             }

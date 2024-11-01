@@ -1,0 +1,12 @@
+
+
+//decode json
+func decodeJSON<T: Codable>(from jsonData: Data, to type: T.Type) -> Result<T, Error> {
+    let decoder = JSONDecoder()
+    do {
+        let decodedData = try decoder.decode(T.self, from: jsonData)
+        return .success(decodedData)
+    } catch {
+        return .failure(error)
+    }
+}

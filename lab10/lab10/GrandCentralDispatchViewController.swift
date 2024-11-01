@@ -24,8 +24,8 @@ class GrandCentralDispatchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.vd3()
-        self.vd4()
+        self.vd3()
+//        self.vd4()
     }
     
     func vd1() {
@@ -79,8 +79,9 @@ class GrandCentralDispatchViewController: UIViewController {
 //            qos: .background, //chỉnh sửa qos của nó
             attributes: .concurrent
         )
+        print("datas: A")
         dispatch?.async { [weak self] in
-            for i in 0..<1000 {
+            for i in 0..<5 {
                 if (self == nil) {return}
                 print("datas: queryId: \(i)")
                 Thread.sleep(forTimeInterval: 1)
@@ -90,28 +91,30 @@ class GrandCentralDispatchViewController: UIViewController {
 //            vc.view.backgroundColor = .red
 //            self.navigationController?.pushViewController(vc, animated: true)
         }
+        print("datas: B")
         dispatch?.async { [weak self] in
-            for i in 1000..<10010 {
+            for i in 10..<15 {
                 if (self == nil) {return}
                 print("datas: queryId: \(i)")
                 Thread.sleep(forTimeInterval: 1)
             }
         }
-        dispatch?.async(flags: .barrier) { [weak self] in
-            if (self == nil) {return}
-            for i in 2000..<20010 {
-                if (self == nil) {return}
-                print("datas: barrier: \(i)")
-                Thread.sleep(forTimeInterval: 1)
-            }
-        }
-        dispatch?.async { [weak self] in
-            for i in 2000..<2001 {
-                if (self == nil) {return}
-                print("datas: queryId: \(i)")
-                Thread.sleep(forTimeInterval: 1)
-            }
-        }
+        print("datas: C")
+//        dispatch?.async(flags: .barrier) { [weak self] in
+//            if (self == nil) {return}
+//            for i in 2000..<20010 {
+//                if (self == nil) {return}
+//                print("datas: barrier: \(i)")
+//                Thread.sleep(forTimeInterval: 1)
+//            }
+//        }
+//        dispatch?.async { [weak self] in
+//            for i in 2000..<2001 {
+//                if (self == nil) {return}
+//                print("datas: queryId: \(i)")
+//                Thread.sleep(forTimeInterval: 1)
+//            }
+//        }
     }
     
     func vd4() {
